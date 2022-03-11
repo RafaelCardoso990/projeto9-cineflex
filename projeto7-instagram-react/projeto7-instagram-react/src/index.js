@@ -1,11 +1,8 @@
 import ReactDOM from "react-dom";
-
-import barraTopo from "./barraTopo";
-import navBar from "./navBar"
+import App from "./App";
 // implemente a página utilizando as funções do react
+const app = App();
 
-const nav = navBar();
-const barra = barraTopo();
 const elemento = document.querySelector(".root");
-ReactDOM.render(nav,barra, elemento);
+ReactDOM.render(app, elemento);
 

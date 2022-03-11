@@ -6,7 +6,7 @@ import Compass from './Images/compass-outline.svg'
 import Heart from './Images/heart-outline.svg'
 import Person from './Images/person-outline.svg'
 
-export default function barraTopo(){
+export default function BarraTopo(){
     return (
      <div className="barra-topo">
           <img className="maquina" src={LogoInsta}/>

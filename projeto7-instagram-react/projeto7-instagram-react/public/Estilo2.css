@@ -7,6 +7,13 @@ body {
     height: 54px;
     
 }
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 300px;
+}
 
 .box-size {
     width: 100vw;
@@ -14,12 +21,11 @@ body {
     max-width: 934px;
     position: relative;
     margin: 0 auto;
-    margin-top: 34px;
-    
-    
+    margin-top: 34px; 
 }
 
 .storys {
+
     background-color: #FFFFFF;
     width: 614px;
     height: 118px;
@@ -27,22 +33,27 @@ body {
     top: 88px;
     display: flex;
     border: 1px solid #DBDBDB;    
-    border-radius: 7px;      
+    border-radius: 7px;     
+    margin-top: 20px;
     
-    
-  
-   
 }
-.story-flex {
+
+.story-flex{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    overflow-x: hidden;
-    
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-top: 20px;    
+}
+
+::-webkit-scrollbar{
+    width: 0px;
 }
 
 .story-container {
+  
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -69,12 +80,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 1px;
-
     border-radius: 33px;
 }
-
 
 .story-container img {
     width: 56px;
@@ -87,10 +95,8 @@ body {
     
 }
 
-.usuario5 {
-    display: flex;
-    flex-direction: column;
-}
+/* storys */
+
 
 .post {
     width: 614px;
@@ -98,6 +104,7 @@ body {
     background-color: rgb(158, 243, 155);
     margin: 10px 0;
 }
+
 .barra-topo {
     background-color: #FFFFFF;
     width: 0 auto;
@@ -109,6 +116,7 @@ body {
     
     
 }
+
 .maquina{
     align-items: center;
     width: 30px;
@@ -123,12 +131,12 @@ body {
     position: fixed;
     width: 16vw;
     height: 0 auto;
-    left: 1105px;
+    left: 1150px;
     top: 54px;
     flex-direction: column;
-    margin-top: 65px;
-    
+    margin-top: 65px;    
 }
+
 .separado-vertical-barra{
     width: 1px;
     background-color: black;
@@ -142,8 +150,6 @@ body {
     
     width: 904px;
 }
-
-
 
 .caixa-pesquisa > input {
     
@@ -172,6 +178,11 @@ body {
     height: 30px;
 }   
 
+.usuario5 {
+    display: flex;
+    flex-direction: column;
+}
+
 .usuario img{
     width: 56px;
     height: 56px;
@@ -180,6 +191,7 @@ body {
     border-radius: 28px;
     
 }
+
 .usuario {
     display: flex;
     
@@ -190,6 +202,7 @@ body {
 .nomes{
     margin-left: 12px;
 }
+
 .p1 {
     font-size:  14px;
     font-family: Roboto;
@@ -214,11 +227,11 @@ body {
 .sujestoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-top: 10px;
 }
 
 .sujestoes-para {
-    margin-top: 18px;
+    margin-top: 5px;
     
 }
 
@@ -233,7 +246,6 @@ body {
 .sugestoes-ali {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
 }
 
 .p3 {
@@ -253,8 +265,7 @@ body {
 
 .barra-cima-post {
     width: 100%;
-    height: 61px;
-    
+    height: 61px;    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -297,10 +308,8 @@ body {
 
 .usuario2 img {
     width: 32px;
-    height: 32px;
-  
+    height: 32px;  
     border-radius: 16px;
-
 }
 
 .usuario2 {
@@ -322,16 +331,11 @@ body {
 .logos-barra-direito img {
     width: 17.87px;
     height: 17.87px;
-    
 }
-
-
-
 
 .barra-baixo-post {
     display:flex;
     justify-content: space-between;
-   
 }
 
 .foto-barra-post2 img {
@@ -351,25 +355,29 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    
+    font-size: 14px;    
 }
 
-
+.caixa-pesquisa{
+    background-color: #EFEFEF;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
 
 .botao {
     width: 20px;
     height: 20px;
     margin-top: 50px;
-    
-
+    /* overflow: scroll; */
 }
 
-.botao ion-icon {
+/* .botao > ion-icon {
     font-size: 26px;
     color: rgba(255, 255, 255, 0.92);
     filter: drop-shadow(-3px 2px 4px rgba(100, 100, 100, 1));
-}
+} */
 
 /*media query*/
 
@@ -422,52 +430,6 @@ body {
     
 }   
 
-@media (max-width: 934px){
-    .side-bar {
-        display: none;
-        position: relative;
-    }
 
-    .storys{
-        max-width: 100%;
-        margin: auto ;
-        height: 0 auto;
-        margin-top: 24px;
-        
-        
-    }
- 
-
-
-    .barra-topo{
-        max-width: 100%;
-
-    }
-
-    .pesquisa {
-        justify-content: space-around;
-        align-items: center;
-        
-    }
-    .maquina{
-        margin-top: 30px;
-    }
-    .logo-insta {
-        margin-left: 110px;
-    }
-    .quatro-items {
-        margin-left: 110px;
-    }
-    .post {
-        max-width: 100%;
-        margin: auto ;
-        height: 0 auto;
-        margin-top: 24px;
-    }
-    
-
-
-    
-}   
 
 
