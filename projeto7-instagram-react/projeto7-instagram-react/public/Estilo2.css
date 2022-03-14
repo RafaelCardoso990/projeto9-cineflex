@@ -35,6 +35,7 @@ body {
     border: 1px solid #DBDBDB;    
     border-radius: 7px;     
     margin-top: 20px;
+    margin-bottom: -720px;
     
 }
 
@@ -43,9 +44,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
     overflow-x: scroll;
-    padding-top: 20px;    
+    padding-top: 20px;  
 }
 
 ::-webkit-scrollbar{
@@ -128,11 +128,11 @@ body {
 
 .side-bar {
     display: flex;
-    position: fixed;
+    position: relative;
     width: 16vw;
     height: 0 auto;
-    left: 1150px;
-    top: 54px;
+    left: 490px;
+    top: 570px;
     flex-direction: column;
     margin-top: 65px;    
 }
@@ -178,10 +178,6 @@ body {
     height: 30px;
 }   
 
-.usuario5 {
-    display: flex;
-    flex-direction: column;
-}
 
 .usuario img{
     width: 56px;
@@ -193,9 +189,8 @@ body {
 }
 
 .usuario {
-    display: flex;
+    display: flex;    
     
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -210,7 +205,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-
+    margin-bottom: -7px;
 }  
 
 .p2 {
@@ -227,7 +222,7 @@ body {
 .sujestoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
 .sujestoes-para {
@@ -246,6 +241,7 @@ body {
 .sugestoes-ali {
     display: flex;
     justify-content: space-between;
+    margin-top: -10px;
 }
 
 .p3 {
@@ -310,11 +306,11 @@ body {
     width: 32px;
     height: 32px;  
     border-radius: 16px;
+    margin-right: 10px;
 }
 
 .usuario2 {
     display: flex;
-    
     justify-content: flex-start;
     align-items: center;
 }

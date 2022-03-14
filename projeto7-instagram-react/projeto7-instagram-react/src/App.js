@@ -11,8 +11,8 @@ export default function App(){
         <div className="conteudo">
             <BarraTopo />
             <Storys />
-            <Post nome="Steve Jobs"/>
             <NavBar />
+            <Post />
         </div>
     )
 }
